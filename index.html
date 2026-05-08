@@ -1374,7 +1374,7 @@ footer {
       </div>
 
       <div class="reveal reveal-delay-1">
-        <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)"
+        <form class="contact-form"
               action="https://formsubmit.co/itsabhishek.patel29@gmail.com" method="POST">
           <input type="hidden" name="_subject" value="📬 New message from your Portfolio!"/>
           <input type="hidden" name="_captcha" value="false"/>
@@ -1616,32 +1616,32 @@ window.addEventListener('scroll', () => {
 });
 
 /* ── Contact Form (FormSubmit) ────────────────────────────────────────── */
-async function handleSubmit(e) {
-  e.preventDefault();
-  const btn = document.getElementById('submitBtn');
-  const form = e.target;
-  btn.textContent = '⏳ Sending...';
-  btn.disabled = true;
-  try {
-    const formData = new FormData(form);
-    const response = await fetch('https://formsubmit.co/ajax/itsabhishek.patel29@gmail.com', {
-      method: 'POST',
-      headers: { 'Accept': 'application/json' },
-      body: formData
-    });
-    const data = await response.json();
-    if (data.success === 'true' || data.success === true) {
-      btn.textContent = '✅ Message Sent!';
-      btn.style.background = '#00c896';
-      form.reset();
-      setTimeout(() => { btn.textContent = 'Send Message ✉️'; btn.style.background = ''; btn.disabled = false; }, 3000);
-    } else { throw new Error('Failed'); }
-  } catch (err) {
-    btn.textContent = '❌ Failed — Try Email';
-    btn.style.background = '#e53e3e';
-    setTimeout(() => { btn.textContent = 'Send Message ✉️'; btn.style.background = ''; btn.disabled = false; }, 3000);
-  }
-}
+// async function handleSubmit(e) {
+//   e.preventDefault();
+//   const btn = document.getElementById('submitBtn');
+//   const form = e.target;
+//   btn.textContent = '⏳ Sending...';
+//   btn.disabled = true;
+//   try {
+//     const formData = new FormData(form);
+//     const response = await fetch('https://formsubmit.co/ajax/itsabhishek.patel29@gmail.com', {
+//       method: 'POST',
+//       headers: { 'Accept': 'application/json' },
+//       body: formData
+//     });
+//     const data = await response.json();
+//     if (data.success === 'true' || data.success === true) {
+//       btn.textContent = '✅ Message Sent!';
+//       btn.style.background = '#00c896';
+//       form.reset();
+//       setTimeout(() => { btn.textContent = 'Send Message ✉️'; btn.style.background = ''; btn.disabled = false; }, 3000);
+//     } else { throw new Error('Failed'); }
+//   } catch (err) {
+//     btn.textContent = '❌ Failed — Try Email';
+//     btn.style.background = '#e53e3e';
+//     setTimeout(() => { btn.textContent = 'Send Message ✉️'; btn.style.background = ''; btn.disabled = false; }, 3000);
+//   }
+// }
 
 /* ── Active Nav on Scroll ─────────────────────────────────────────────── */
 const sections = document.querySelectorAll('section[id]');
