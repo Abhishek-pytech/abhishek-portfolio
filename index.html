@@ -1374,34 +1374,41 @@ footer {
       </div>
 
       <div class="reveal reveal-delay-1">
-        <form class="contact-form"
-           <form action="https://formsubmit.co/f92f2e7da39ce2c1969888396680ea11" method="POST"></form>
-          <input type="hidden" name="_subject" value="📬 New message from your Portfolio!"/>
-          <input type="hidden" name="_captcha" value="false"/>
-          <input type="hidden" name="_template" value="table"/>
-          <input type="text" name="_honey" style="display:none"/>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="cf-name">NAME</label>
-              <input id="cf-name" type="text" name="name" placeholder="Your name" required/>
-            </div>
-            <div class="form-group">
-              <label for="cf-email">EMAIL</label>
-              <input id="cf-email" type="email" name="email" placeholder="your@email.com" required/>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="cf-subject">SUBJECT</label>
-            <input id="cf-subject" type="text" name="subject_line" placeholder="Internship opportunity, collaboration..." required/>
-          </div>
-          <div class="form-group">
-            <label for="cf-message">MESSAGE</label>
-            <textarea id="cf-message" name="message" rows="5" placeholder="Tell me about the role or project..." required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;" id="submitBtn">
-            Send Message ✉️
-          </button>
-        </form>
+        <form class="contact-form" 
+        action="https://formsubmit.co/f92f2e7da39ce2c1969888396680ea11" method="POST">
+
+        <input type="hidden" name="_subject" value="📬 New message from your Portfolio!"/>
+        <input type="hidden" name="_captcha" value="false"/>
+        <input type="hidden" name="_template" value="table"/>
+        <input type="text" name="_honey" style="display:none"/>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="cf-name">NAME</label>
+      <input id="cf-name" type="text" name="name" placeholder="Your name" required/>
+    </div>
+
+    <div class="form-group">
+      <label for="cf-email">EMAIL</label>
+      <input id="cf-email" type="email" name="email" placeholder="your@email.com" required/>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="cf-subject">SUBJECT</label>
+    <input id="cf-subject" type="text" name="subject" placeholder="Internship opportunity..." required/>
+  </div>
+
+  <div class="form-group">
+    <label for="cf-message">MESSAGE</label>
+    <textarea id="cf-message" name="message" rows="5" placeholder="Tell me about the role or project..." required></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;" id="submitBtn">
+    Send Message ✉️
+  </button>
+
+      </form>
       </div>
 
     </div>
