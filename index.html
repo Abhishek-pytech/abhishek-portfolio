@@ -582,7 +582,17 @@ section { padding: 100px 40px; position: relative; z-index: 2; }
 
 .project-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
 .project-icon { font-size: 1.6rem; }
-.project-links { display: flex; gap: 8px; }
+.project-links { 
+  display: flex; 
+  gap: 8px; 
+  position: relative;
+  z-index: 20;
+}
+
+.project-links a {
+  pointer-events: auto;
+}
+
 
 .icon-link {
   width: 32px; height: 32px;
@@ -1195,6 +1205,48 @@ footer {
     <div class="projects-grid">
 
       <div class="tilt-wrap">
+      <div class="project-card tilt-card reveal reveal-delay-2">
+        <div class="tilt-shine"></div>
+        <div class="project-top">
+          <div class="project-icon">🎓</div>
+          <div class="project-links">
+
+        <!-- GitHub -->
+        <a href="https://github.com/Abhishek-pytech"
+           target="_blank"
+           class="icon-link"
+           title="GitHub">
+           <i class="fa-brands fa-github"></i>
+        </a>
+
+        <!-- Live Demo -->
+        <a href="https://abhishekpatel29.pythonanywhere.com/"
+           target="_blank"
+           class="btn btn-primary"
+           style="padding:6px 12px;font-size:0.72rem;">
+            Live Demo
+        </a>
+
+      </div>
+    </div>
+        <div class="project-title">Student Management System</div>
+        <div class="project-desc">
+      Full-stack Django-based Student Management System with student record management, attendance tracking, dashboard analytics, authentication, and responsive admin interface. Built using Django ORM and deployed live on PythonAnywhere.
+    </div>
+
+    <div class="project-tech">
+      <span class="tech-chip">Python</span>
+      <span class="tech-chip">Django</span>
+      <span class="tech-chip">SQLite</span>
+      <span class="tech-chip">HTML/CSS</span>
+      <span class="tech-chip">Attendance System</span>
+      <span class="tech-chip">Dashboard</span>
+      <span class="tech-chip">CRUD</span>
+    </div>
+  </div>
+</div>
+
+      <div class="tilt-wrap">
       <div class="project-card tilt-card reveal">
         <div class="tilt-shine"></div>
         <div class="project-top">
@@ -1234,25 +1286,7 @@ footer {
       </div>
       </div>
 
-      <div class="tilt-wrap">
-      <div class="project-card tilt-card reveal reveal-delay-2">
-        <div class="tilt-shine"></div>
-        <div class="project-top">
-          <div class="project-icon">🎓</div>
-          <div class="project-links">
-            <a href="https://github.com/Abhishek-pytech" target="_blank" class="icon-link" title="GitHub" aria-label="View Student Management System on GitHub">⌥</a>
-          </div>
-        </div>
-        <div class="project-title">Student Management System</div>
-        <div class="project-desc">Full-stack web application using Django MVC to manage student records with complete CRUD operations, a responsive UI, and Django Admin Panel integration for administrative control.</div>
-        <div class="project-tech">
-          <span class="tech-chip">Django</span>
-          <span class="tech-chip">HTML/CSS</span>
-          <span class="tech-chip">SQLite</span>
-          <span class="tech-chip">Django ORM</span>
-        </div>
-      </div>
-      </div>
+      
 
       <div class="tilt-wrap">
       <div class="project-card tilt-card reveal">
