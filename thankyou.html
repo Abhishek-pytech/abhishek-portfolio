@@ -1,77 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Message Sent | Abhishek Patel</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Message Sent</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-<style>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 
-body{
-  margin:0;
-  height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background:#0a0d12;
-  font-family:'Sora',sans-serif;
-  color:white;
-}
+  <style>
 
-.box{
-  text-align:center;
-  max-width:500px;
-  padding:40px;
-}
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
 
-.icon{
-  font-size:70px;
-  margin-bottom:20px;
-}
+    body{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:#0f172a;
+      font-family:'Poppins',sans-serif;
+      overflow:hidden;
+      color:white;
+    }
 
-h1{
-  font-size:2rem;
-  margin-bottom:15px;
-}
+    .success-box{
+      width:90%;
+      max-width:500px;
+      background:rgba(255,255,255,0.06);
+      border:1px solid rgba(255,255,255,0.1);
+      backdrop-filter:blur(12px);
+      padding:45px 35px;
+      border-radius:24px;
+      text-align:center;
+      box-shadow:0 10px 40px rgba(0,0,0,0.4);
+      animation:fadeIn 1s ease;
+    }
 
-p{
-  color:#9aa5b4;
-  line-height:1.7;
-  margin-bottom:30px;
-}
+    .icon-circle{
+      width:95px;
+      height:95px;
+      margin:auto;
+      border-radius:50%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:linear-gradient(135deg,#00c6ff,#0072ff);
+      box-shadow:0 0 25px rgba(0,114,255,0.6);
+      animation:pulse 2s infinite;
+    }
 
-a{
-  display:inline-block;
-  background:#00e5a0;
-  color:black;
-  text-decoration:none;
-  padding:14px 28px;
-  border-radius:10px;
-  font-weight:700;
-}
+    .icon-circle i{
+      font-size:42px;
+      color:white;
+    }
 
-</style>
+    h1{
+      margin-top:28px;
+      font-size:2rem;
+      font-weight:600;
+    }
+
+    p{
+      margin-top:15px;
+      color:#cbd5e1;
+      line-height:1.7;
+      font-size:1rem;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:30px;
+      padding:14px 30px;
+      border-radius:14px;
+      background:linear-gradient(135deg,#00c6ff,#0072ff);
+      color:white;
+      text-decoration:none;
+      font-weight:500;
+      transition:0.3s ease;
+      box-shadow:0 8px 20px rgba(0,114,255,0.35);
+    }
+
+    .btn:hover{
+      transform:translateY(-3px);
+      box-shadow:0 12px 25px rgba(0,114,255,0.5);
+    }
+
+    @keyframes pulse{
+      0%{
+        transform:scale(1);
+      }
+      50%{
+        transform:scale(1.08);
+      }
+      100%{
+        transform:scale(1);
+      }
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(20px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+  </style>
 </head>
-
 <body>
 
-<div class="box">
+  <div class="success-box">
 
-<div class="icon">✅</div>
+    <div class="icon-circle">
+      <i class="fa-solid fa-paper-plane"></i>
+    </div>
 
-<h1>Message Sent Successfully</h1>
+    <h1>Message Sent Successfully</h1>
 
-<p>
-Thank you for reaching out.  
-Your message has been received successfully.
-I’ll respond as soon as possible.
-</p>
+    <p>
+      Thank you for reaching out. Your message has been received successfully.
+      I’ll respond as soon as possible.
+    </p>
 
-<a href="index.html">Back to Portfolio</a>
+    <a href="index.html" class="btn">
+      <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
+    </a>
 
-</div>
+  </div>
 
 </body>
 </html>
